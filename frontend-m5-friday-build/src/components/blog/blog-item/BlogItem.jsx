@@ -11,9 +11,11 @@ const BlogItem = (props) => {
         <Card.Img variant="top" src={props.imageUrl} className="blog-cover" />
         <Card.Body>
           <Card.Title>{props.name}</Card.Title>
+          <h2>{props.category}</h2>
+          <h6>{props.description}</h6>
         </Card.Body>
         <Card.Footer>
-          <BlogAuthor /* {props.name } */ />
+          <BlogAuthor> </BlogAuthor>
         </Card.Footer>
       </Card>
     </Link>
