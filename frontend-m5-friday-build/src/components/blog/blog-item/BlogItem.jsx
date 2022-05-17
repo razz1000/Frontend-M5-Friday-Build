@@ -19,12 +19,10 @@ const BlogItem = (props) => {
           </Card.Body>
           <Card.Footer></Card.Footer>
 
-          <BlogReviews reviews={props.reviews} />
+          {/*           <BlogReviews reviews={props.reviews} /> */}
         </Card>
       </Link>
-      <div>
-        <BlogCommentField id={props.id} />
-      </div>
+      <div>{/*         <BlogCommentField id={props.id} /> */}</div>
     </div>
   );
 };
