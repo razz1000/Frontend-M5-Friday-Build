@@ -15,7 +15,7 @@ const NewBlogPost = (props) => {
   };
 
   let fetchData = async () => {
-    let response = await fetch("http://localhost:5001/products/", {
+    let response = await fetch("https://strive100.herokuapp.com/products", {
       method: "POST",
       body: JSON.stringify(eComProducts),
       headers: {

@@ -13,7 +13,7 @@ let BlogCommentField = (props) => {
 
   let fetchData = async () => {
     let response = await fetch(
-      "http://localhost:5001/products/" + props.id + "/reviews",
+      "https://strive100.herokuapp.com/products" + props.id + "/reviews",
       {
         method: "post",
         body: JSON.stringify(comment),
